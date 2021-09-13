@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>KONVERSI SUHU</title>
+    </head>
+    <style>
+        *{box-sizing: border-box;}
+        [class*="col-"]{
+            padding: 15px;
+            float: left;
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px){
+            /*untuk tablet*/
+            .col-s-1{width: 8.33%;}
+            .col-s-2{width: 16.66%;}
+            .col-s-3{width: 25%;}
+            .col-s-4{width: 33.33%;}
+            .col-s-5{width: 41.66%;}
+            .col-s-6{width: 50%;}
+            .col-s-7{width: 58.33%;}
+            .col-s-8{width: 66.66%;}
+            .col-s-9{width: 75%;}
+            .col-s-10{width: 83.33%;}
+            .col-s-11{width: 91.66%;}
+            .col-s-12{width: 100%;}
+        }
+        @media only screen and (min-width: 768px){
+            /*untuk dekstop*/
+            .col-1{width: 8.33%;}
+            .col-2{width: 16.66%;}
+            .col-3{width: 25%;}
+            .col-4{width: 33.33%;}
+            .col-5{width: 41.66%;}
+            .col-6{width: 50%;}
+            .col-7{width: 58.33%;}
+            .col-8{width: 66.66%;}
+            .col-9{width: 75%;}
+            .col-10{width: 83.33%;}
+            .col-11{width: 91.66%;}
+            .col-12{width: 100%;}
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .control{
+            font-size: 20px;
+        }
+        .form-control{
+            padding: 15px;
+            font-size: 15px;
+            width: 100%;
+            height: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        .button{
+            float: right;
+            background: rgb(230, 230, 230);
+            color: black;
+            padding: 10px;
+            margin-right: 5px;
+            border: 1px solid black;
+            border-radius: 10px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+        }
+        fieldset{
+            border-radius: 10px;
+        }
+        .fieldset legend{
+            font-weight: bolder;
+        }
+    </style>
+    <body>
+        <br>
+        <div class="container">
+            <form action="Suhu konversi.php" method="POST">
+                <fieldset>
+                    <legend class="control"><b>KONVERSI SUHU</b></legend>
+                    <div class="col-2 control">
+                        <b>SUHU AWAL</b>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" name="input" class="form-control">
+                    </div>
+                    <div class="col-12 control">
+                        <input type="radio" name="suhu" value="celcius">Celcius<br>
+                        <input type="radio" name="suhu" value="fahrenheit">Fahrenheit<br>
+                        <input type="radio" name="suhu" value="reamur">Reamur<br>
+                        <input type="radio" name="suhu" value="kelvin">Kelvin<br>
+                    </div>
+                    <div class="col-12 control">
+                        <b>SUHU KONVERSI</b>
+                    </div>
+                    <div class="col-12 control">
+                        <input type="radio" name="konversi" value="celcius">Celcius<br>
+                        <input type="radio" name="konversi" value="fahrenheit">Fahrenheit<br>
+                        <input type="radio" name="konversi" value="reamur">Reamur<br>
+                        <input type="radio" name="konversi" value="kelvin">Kelvin<br>
+                    </div>
+                    <button type="submit" name="submit" value="konversi" class="button">
+                        Konversi
+                    </button>
+                    <button type="reset" class="button">
+                        Reset
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
